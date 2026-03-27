@@ -1,0 +1,28 @@
+
+--- STRUK ---
+1. apel - RP. 100000.0
+Total: 300000.0
+diskon: 60000.0
+bayar: 240000.0
+
+2. mangga - RP. 200000.0
+Total: 300000.0
+diskon: 60000.0
+bayar: 240000.0
+
+
+--- STRUK ---
+1. duren - RP. 800000.0
+2. sirsak - RP. 700000.0
+Total: 1500000.0
+diskon: 300000.0
+bayar: 1200000.0
+
+
+--- STRUK ---
+1. juwet - RP. 50000.0
+2. jamblang - RP. 30000.0
+Total: 80000.0
+diskon: 0
+bayar: 80000.0
+
