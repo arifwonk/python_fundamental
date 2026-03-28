@@ -98,6 +98,9 @@ for i in range(jumlah):
     while True:
         try:
             harga = float(input(f"Harga barang ke- {i+1}: "))
+            if harga < 0:
+                print("Harga Tidak Boleh Negatif")
+                continue
             break
         except ValueError:
             print("Input Harus Angka")
@@ -112,8 +115,11 @@ bayar = total - diskon
 
 print("\n--- STRUK ---\n")
 
-for i in range(len(barang)):
-    print(f"{i+1}. {barang[i]} - RP. {harga_list[i]}")
+# for i in range(len(barang)):
+#     print(f"{i+1}. {barang[i]} - RP. {harga_list[i]}")
+
+for i, (nama_barang, harga) in enumerate(zip(barang, harga_list)):
+    print(f"{i}. {nama_barang} - RP. {harga}")
 
 print(f"Total: {total}")
 print(f"diskon: {diskon}")
