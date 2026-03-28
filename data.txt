@@ -1,8 +1,8 @@
 
 --- STRUK ---
-1. jeruk - RP. 200000.0
-2. apel - RP. 300000.0
-Total: 500000.0
-diskon: 100000.0
-bayar: 400000.0
+1. pepaya - RP. 800000.0
+2. semangka - RP. 900000.0
+Total: 1700000.0
+diskon: 340000.0
+bayar: 1360000.0
 

@@ -113,14 +113,20 @@ total = hitung_total(harga_list)
 diskon = hitung_diskon(total)
 bayar = total - diskon
 
-print("\n--- STRUK ---\n")
 
-# for i in range(len(barang)):
-#     print(f"{i+1}. {barang[i]} - RP. {harga_list[i]}")
+with open("data.txt", "a") as file:
+    file.write("\n--- STRUK ---\n")
 
-for i, (nama_barang, harga) in enumerate(zip(barang, harga_list)):
-    print(f"{i}. {nama_barang} - RP. {harga}")
+    # for i in range(len(barang)):
+    #   file.write(f"{i+1}. {barang[i]} - RP. {harga_list[i]}")
 
-print(f"Total: {total}")
-print(f"diskon: {diskon}")
-print(f"bayar: {bayar}")
+    for i, (nama, harga) in enumerate(zip(barang, harga_list), start=1):
+        file.write(f"{i}. {nama} - RP. {harga}\n")
+
+    file.write(f"Total: {total}\n")
+    file.write(f"diskon: {diskon}\n")
+    file.write(f"bayar: {bayar}\n")
+    file.write("\n")
+with open("data.txt", "r") as file:
+    isi = file.read()
+    print(isi)
